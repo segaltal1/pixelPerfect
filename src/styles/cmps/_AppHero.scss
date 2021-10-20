@@ -1,0 +1,28 @@
+.app-hero {
+    background-color: #014e56;
+    padding-top: 87px;
+    padding-bottom: 259px;
+    padding-inline: 170px;
+    justify-content: space-between;
+
+    .hero-content {
+        justify-content: space-between;
+        .left-content {
+            p {
+                margin: 0;
+                font-size: 100px;
+                max-width: 9ch;
+                .talent-word{
+                    color: $pinkClr;
+                }
+            }
+        }
+        .right-content {
+            align-self: center;
+            p {
+                line-height: 30px;
+                max-width: 42ch;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.app {
+  display: grid;
+  margin: 0 auto;
+  // height: 100vh;
+  max-width: 1400px;
+  grid-template-columns:1fr;
+  grid-template-rows: 700px 685px 745px 200px 200px;
+  grid-template-areas:
+    "hero hero hero hero"
+    "main main main main"
+    "card card card card"
+    "start start start start"
+    "footer footer footer footer";
+  @include for-mobile-layout {
+    height: unset;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hero hero hero hero"
+    "main main main main"
+    "card card card card"
+    "start start start start"
+    "footer footer footer footer";
+  }
+}
+.app-hero{
+  grid-area: hero;
+}
+
+.app-main{
+  grid-area: main;
+}
+
+.app-card{
+  grid-area: card;
+}
+.app-start{
+  grid-area: start;
+}
+.app-footer{
+  grid-area: footer;
+}
+
+
+
+// .app-header {
+//   grid-area: header;
+// }
+// .video-search {
+//   grid-area: search;
+// }
+// .video-list {
+//   grid-area: list;
+// }
+// .video-player {
+//   grid-area: player;
+// }
+// .app-footer {
+//   grid-area: footer;
+// }

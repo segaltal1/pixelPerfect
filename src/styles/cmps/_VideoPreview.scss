@@ -1,0 +1,40 @@
+.video-preview {
+    .video-card {
+        padding: 0.55rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        background: $clr3;
+        gap: 10px;
+        @include for-narrow-layout {
+            max-width: 100vw;
+        }
+        @include for-mobile-layout {
+            flex-direction: column;
+        }
+
+        .video-details {
+            span {
+                max-width: 25ch;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        .play-btn {
+            border: 1px gray solid;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 5px;
+            align-self: flex-start;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                opacity: 0.8;
+            }
+            @include for-mobile-layout {
+                align-self: center;
+            }
+        }
+    }
+}

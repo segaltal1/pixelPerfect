@@ -1,0 +1,22 @@
+.app-start {
+    color: #012f34;
+
+    background-color: $pinkClr;
+    padding-top: 90px;
+    padding-bottom: 65px;
+    padding-inline: 260px;
+    @include for-wide-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    h1 {
+        font-size: 48px;
+        font-family: livvic-bold;
+    }
+    button {
+        background: transparent;
+        padding: 0.6rem 1.8rem;
+        border-radius: 1rem;
+        border: 1px solid #012f34;
+    }
+}
